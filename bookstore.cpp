@@ -39,4 +39,8 @@ int main()
     b1.input();
     b1.display();
     return 0;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e615a97 (added bookstore2 file)
