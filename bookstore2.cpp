@@ -11,24 +11,25 @@ class employee
 
     void input()
     {
-        cout<<"Enter Employee Name:";
-        cin.ignore();
+        cout<<"Enter Employee Name: ";
+        //cin.ignore();
         getline(cin,name);
 
-        cout<<"Enter Employee ID:";
+        cout<<"Enter Employee ID: ";
         cin>>id;
 
-        cout<<"Enter Employee Salary:";
+        cout<<"Enter Employee Salary: ";
         cin>>salary;
+        cin.ignore();
     }
 
     void display()
     {
         cout<<"Employee Details:"<<endl;
 
-        cout<<"Name:"<<name<<endl;
-        cout<<"ID:"<<id<<endl;
-        cout<<"Salary:"<<salary<<endl;
+        cout<<"Employee Name:"<<name<<endl;
+        cout<<"Employee ID:"<<id<<endl;
+        cout<<"Employee Salary:"<<salary<<endl;
     }
 } ;
 
@@ -36,10 +37,9 @@ class employee
 int main() 
 {
    employee e1;
+   employee e2;
    e1.input();
    e1.display();
-   
-   employee e2;
     e2.input();
     e2.display();
     return 0;
